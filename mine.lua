@@ -7,7 +7,7 @@ local function vector(absolute)
     print("error: not enough arguments")
   else
     if absolute then
-      vec.x,vec.y,vec.z = tArgs[2],tArgs[3],tArgs[4]
+      vec.x,vec.y,vec.z = tonumber(tArgs[2]),tonumber(tArgs[3]),tonumber(tArgs[4])
       vec = tor.toRelative(vec)
     end
     tor.vecMove(vec,true)
